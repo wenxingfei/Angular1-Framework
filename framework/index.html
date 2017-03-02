@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <base href="../">
+        <meta charset="utf-8">
+        <title>Angular Framework</title>
+        <script type="text/javascript" src="framework/libs/require.js"></script>
+        <script type="text/javascript" src="framework/libs/angular.js"></script>
+        <script type="text/javascript" src="framework/libs/underscore.js"></script>
+        <script type="text/javascript" src="framework/main.js" defer></script>
+    </head>
+    <body ng-controller="appController">
+        <head>
+            <nav>
+                <ul>
+                    <li ng-repeat="item in navs.items" ng-click="navs.onItemClick(item)" ng-bind="item.name"></li>
+                </ul>
+            </nav>
+        </head>
+        <article>
+            <div ui-view></div>
+        </article>
+        <footer></footer>
+    </body>
+</html>
