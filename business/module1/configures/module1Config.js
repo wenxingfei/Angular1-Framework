@@ -1,4 +1,4 @@
-define(["lazyLoad"], function(lazyLoad){
+define(["lazyLoad", "../common/baseModule"], function(lazyLoad, baseModule){
     "use strict";
      
     var configArr = [{
@@ -22,7 +22,7 @@ define(["lazyLoad"], function(lazyLoad){
         }
     }];
 
-    var module = angular.module("module1", []);
+    var module = angular.module("module1", [baseModule.name]);
     lazyLoad.makeLazy(module).setRouterConfig(configArr);
     return module;
 });

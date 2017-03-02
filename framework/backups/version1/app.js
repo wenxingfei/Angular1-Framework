@@ -3,11 +3,12 @@ define([
 ], function(lazyLoad){
     "use strict";
 
-    var app = angular.module("myApp", [lazyLoad.name]);
-    app.constant("modulePaths", {
+    var modulePath = {
         "module1": "business/module1/configures/module1Config"
-    });
-    app.controller("appController", function($scope, $state, modulePaths){
+    };
+
+    var app = angular.module("myApp", [lazyLoad.name]);
+    app.controller("appController", function($scope, $state, $timeout){
         $scope.navs = {
             curItem: null,
             items: [{
@@ -21,7 +22,7 @@ define([
             }],
             onItemClick: function(item){
                 this.curItem = item;
-                require([modulePaths[item.module]], function(module){                 
+                require([modulePath[item.module] + "!"], function(module){                 
                     $state.go(item.state, {});
                 });
             }
