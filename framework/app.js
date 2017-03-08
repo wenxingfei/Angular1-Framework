@@ -10,22 +10,24 @@ define([
     app.controller("appController", function($scope, $state, modulePaths){
         $scope.navs = {
             curItem: null,
-            items: [{
-                name: "页面一",
-                state: "module1.page1",
-                module: "module1"
-            }, {
-                name: "页面二",
-                state: "module1.page2",
-                module: "module1"
-            }],
+            items: [],
             onItemClick: function(item){
                 this.curItem = item;
                 require([modulePaths[item.module]], function(module){                 
                     $state.go(item.state, {});
                 });
+            },
+            init: function(){
+                var self = this;
+                require(["json!framework/jsons/menu.json"], function(menus){
+                    $scope.$apply(function(){
+                        self.items = menus;
+                    });
+                }); 
             }
         };
+
+        $scope.navs.init();
     })
 
     return app;

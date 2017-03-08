@@ -1,0 +1,4 @@
+[
+    { "id": "1", "name": "page1", "displayName": "页面1", "displayName_en": "Page1", "state": "module1.page1", "module": "module1"},
+    { "id": "2", "name": "page2", "displayName": "页面2", "displayName_en": "Page2", "state": "module1.page2", "module": "module1"}    
+]

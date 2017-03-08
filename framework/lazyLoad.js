@@ -21,7 +21,7 @@ define([
     }).run(function($ocLazyLoad, $q){
         services.$ocLazyLoad = $ocLazyLoad;
         services.$q = $q;
-    });   
+    });
     lazy.makeLazy = function(module){        
         module.lazyProvider = makeRegister(providers.$provide.provider);
         module.lazyService = makeRegister(providers.$provide.service);
@@ -78,7 +78,7 @@ define([
         var $q = services.$q;
         if(!urls || !urls.length) return $q.resolve();
         if(type === "css"){
-            var urls = _.map(url, function(url){
+            var urls = _.map(urls, function(url){
                 return /^css!/.test(url) ? url : "css!" + url;
             });
         }
