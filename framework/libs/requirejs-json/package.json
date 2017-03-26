@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      "requirejs-json",
+      ""
+    ]
+  ],
+  "_from": "requirejs-json@latest",
+  "_id": "requirejs-json@0.0.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/requirejs-json",
+  "_nodeVersion": "0.12.2",
+  "_npmUser": {
+    "email": "taka@gigafied.com",
+    "name": "gigafied"
+  },
+  "_npmVersion": "2.7.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "requirejs-json",
+    "raw": "requirejs-json",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/requirejs-json/-/requirejs-json-0.0.3.tgz",
+  "_shasum": "8d512699337757d7a96c54a9e85c6c031a101b16",
+  "_shrinkwrap": null,
+  "_spec": "requirejs-json",
+  "_where": "",
+  "author": {
+    "email": "taka@gigafied.com",
+    "name": "Taka Kojima"
+  },
+  "bugs": {
+    "url": "https://github.com/gigafied/requirejs-json/issues"
+  },
+  "dependencies": {},
+  "description": "requirejs-json",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "8d512699337757d7a96c54a9e85c6c031a101b16",
+    "tarball": "https://registry.npmjs.org/requirejs-json/-/requirejs-json-0.0.3.tgz"
+  },
+  "gitHead": "af6e1581022c057b9e17723d99ddbac8fd8bb519",
+  "homepage": "https://github.com/gigafied/requirejs-json#readme",
+  "keywords": [
+    "json",
+    "requirejs"
+  ],
+  "license": "MIT",
+  "main": "json.js",
+  "maintainers": [
+    {
+      "name": "gigafied",
+      "email": "taka@gigafied.com"
+    }
+  ],
+  "name": "requirejs-json",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigafied/requirejs-json.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.3"
+}

@@ -4,9 +4,10 @@
         <base href="../">
         <meta charset="utf-8">
         <title>Angular Framework</title>
-        <script type="text/javascript" src="framework/libs/require.js"></script>
-        <script type="text/javascript" src="framework/libs/angular.js"></script>
-        <script type="text/javascript" src="framework/libs/underscore.js"></script>
+        <script type="text/javascript" src="framework/libs/requirejs/require.js"></script>
+        <script type="text/javascript" src="framework/libs/jquery/dist/jquery.min.js"></script>        
+        <script type="text/javascript" src="framework/libs/angular/angular.min.js"></script>
+        <script type="text/javascript" src="framework/libs/underscore/underscore-min.js"></script>
         <script type="text/javascript" src="framework/main.js" defer></script>
     </head>
     <body ng-controller="appController">
@@ -17,6 +18,7 @@
                 </ul>
             </nav>
         </head>
+        <div ncy-breadcrumb></div>
         <article>
             <div ui-view></div>
         </article>

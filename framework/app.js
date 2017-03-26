@@ -1,9 +1,15 @@
 define([
-    "lazyLoad"
+    "lazyLoad",
+    "breadcrumb"
 ], function(lazyLoad){
     "use strict";
 
-    var app = angular.module("myApp", [lazyLoad.name]);
+    var dependency = [
+        "ncy-angular-breadcrumb",
+        lazyLoad.name
+    ];
+
+    var app = angular.module("myApp", dependency);
     app.constant("modulePaths", {
         "module1": "business/module1/configures/module1Config"
     });
